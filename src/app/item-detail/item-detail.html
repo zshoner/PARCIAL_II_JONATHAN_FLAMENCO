@@ -1,0 +1,10 @@
+@if (item) {
+  <div>
+    <h3>Detalle del Elemento Seleccionado</h3>
+    <p>ID: {{ item.id }}</p>
+    <p>Nombre: {{ item.nombre }}</p>
+    <p>Descripción: {{ item.descripcion }}</p>
+  </div>
+} @else {
+  <p>Seleccione un elemento de la lista para ver sus detalles.</p>
+}

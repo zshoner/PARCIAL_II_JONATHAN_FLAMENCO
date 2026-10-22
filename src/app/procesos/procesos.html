@@ -1,0 +1,17 @@
+<h2>Procesos</h2>
+
+<div>
+  <input type="text" [(ngModel)]="nuevoTexto" placeholder="Nombre del proceso">
+  <div>
+    <br>
+    <button type="button" (click)="agregar()">Agregar Proceso</button>
+  </div>
+
+</div>
+
+
+<ul>
+  @for (item of lista; track $index) {
+    <li>{{ item }}</li>
+  }
+</ul>

@@ -1,0 +1,9 @@
+<h3>Lista de Elementos</h3>
+<ul>
+  @for (item of elementos; track item.id) {
+    <li>
+      <span>{{ item.nombre }}</span>
+      <button type="button" (click)="seleccionarItem(item)">Ver Detalle</button>
+    </li>
+  }
+</ul>
